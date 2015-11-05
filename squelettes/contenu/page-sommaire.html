@@ -1,0 +1,21 @@
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <BOUCLE_present(ARTICLES){id_rubrique=1}{par num titre}>
+        <a href="#URL_ARTICLE" style="color: rgba(0, 0, 0, 0.87);">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">#SOUSTITRE</i></h2>
+            <h5 class="center">#TITRE</h5>
+            <p class="light">[(#TEXTE|textebrut|couper{280})]</p>
+          </div>
+        </div></a>
+        </BOUCLE_present>
+
+      </div>
+
+    </div>
+  </div>
+

@@ -1,0 +1,75 @@
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"> &ldquo; La mer pour seul horizon... &rdquo; </h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="#CHEMIN{img/background2.jpg}" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <BOUCLE_contact(ARTICLES){id_article=7}>
+        <div class="col s12 center">
+            <h2 class="center brown-text"><i class="material-icons">#SOUSTITRE</i></h2>
+          <h4>#TITRE</h4>
+          <p class="left-align light">#TEXT</p>
+          #FORMULAIRE_ECRIRE_AUTEUR{ajax}
+        </div>
+        </BOUCLE_contact>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">&ldquo; Un coin de paradis au sud du sud... &rdquo; </h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="#CHEMIN{img/background3.jpg}" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4"></p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+<!--            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+-->          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+<!--            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+-->          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/fr/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/fr/88x31.png" /></a>Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by/3.0/fr/">Licence Creative Commons Attribution 3.0 France</a>.
+      </div>
+    </div>
+  </footer>
+

@@ -1,0 +1,39 @@
+<div id="page">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      [<a id="logo-container" href="#" class="brand-logo">(#LOGO_SITE_SPIP|image_reduire{300,48})</a>]
+      <ul class="right hide-on-med-and-down">
+        <li><INCLURE{fond=inclure/barre-nav,env}></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><INCLURE{fond=inclure/barre-nav,env}></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+	<div id="entete">
+		<INCLURE{fond=inclure/entete,env}>
+	</div>
+	
+	<div id="conteneur">	
+		<div id="contenu">
+      <p>contenu/#ENV{type},env</p>
+			<INCLURE{fond=contenu/#ENV{type},env}>
+		</div>
+
+<!--		<div id="navigation">
+			<INCLURE{fond=navigation/#ENV{type},env}>
+			<INCLURE{fond=extra/#ENV{type},env}>
+		</div> -->
+	</div>
+
+	<div id="pied">
+		<INCLURE{fond=inclure/pied,env}>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="#CHEMIN{js/materialize.js}"></script>
+  <script src="#CHEMIN{js/init.js}"></script>
+
