@@ -1,10 +1,7 @@
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
       <div class="row">
-        <BOUCLE_present(ARTICLES){id_rubrique=1}{par num titre}>
-        <a href="#URL_ARTICLE" class="ajax" style="color: rgba(0, 0, 0, 0.87);">
+
+        <BOUCLE_present(ARTICLES){id_rubrique=1}{par num titre}{pagination 3}>
+        <a href="[(#URL_ARTICLE)]#title" style="color: rgba(0, 0, 0, 0.87);">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">#SOUSTITRE</i></h2>
@@ -13,9 +10,4 @@
           </div>
         </div></a>
         </BOUCLE_present>
-
       </div>
-
-    </div>
-  </div>
-

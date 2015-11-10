@@ -16,24 +16,18 @@
 	<div id="entete">
 		<INCLURE{fond=inclure/entete,env}>
 	</div>
-	
-	<div id="conteneur">	
-		<div id="contenu">
-      <p>contenu/#ENV{type},env</p>
-			<INCLURE{fond=contenu/#ENV{type}}{env}{ajax}>
-		</div>
-
-<!--		<div id="navigation">
-			<INCLURE{fond=navigation/#ENV{type},env}>
-			<INCLURE{fond=extra/#ENV{type},env}>
-		</div> -->
-	</div>
+ 
+  <div class="container">
+    <div class="section">
+      <INCLURE{fond=contenu/#ENV{type}}{env}>
+    </div>
+  </div>
 
 	<div id="pied">
 		<INCLURE{fond=inclure/pied,env}>
 	</div>
 </div>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
   <script src="#CHEMIN{js/materialize.js}"></script>
   <script src="#CHEMIN{js/init.js}"></script>
 

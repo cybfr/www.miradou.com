@@ -5,7 +5,14 @@
  *
  * Made By MaterializeCSS.com
  */
-
+/* Shorten height of navbar to 48px */
+nav {
+  height: 48px;
+  line-height: 48px;
+}
+nav .container {
+  width: 100%;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;

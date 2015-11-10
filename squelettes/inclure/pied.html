@@ -14,12 +14,13 @@
 
       <div class="row">
         <BOUCLE_contact(ARTICLES){id_article=7}>
-        <div class="col s12 center">
-            <h2 class="center brown-text"><i class="material-icons">#SOUSTITRE</i></h2>
-          <h4>#TITRE</h4>
-          <p class="left-align light">#TEXT</p>
-          #FORMULAIRE_ECRIRE_AUTEUR{ajax}
-        </div>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">#SOUSTITRE</i>#TITRE</div>
+            <div class="collapsible-body"><p>#TEXT
+            #FORMULAIRE_ECRIRE_AUTEUR{ajax}</p></div>
+          </li>  
+        </ul>
         </BOUCLE_contact>
       </div>
 
